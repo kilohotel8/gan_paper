@@ -7,3 +7,5 @@ for recording gan paper I have read
 - cgan - read
 - pix2pix - read
 - cycle_gan - read
+- pix2pix2hd - read
+- Everybody_Dance_Now - read
