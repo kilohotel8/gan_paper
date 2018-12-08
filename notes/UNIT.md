@@ -65,7 +65,7 @@
 ### Domain Adaption
 - 한 domain에서 학습된 classifier를 트레이닝 과정에서 볼 수 없었던 새로운 domain을 분류하는 문제에 적용.
 - Source domain의 이미지를 target domain로 변형시키고 discriminator에서 뽑은 feature들로 분류한다.
-- D<sub>1</sub>과 D<sub>2의 weight들을 묶었기 때문에 가능하다.
+- D<sub>1</sub>과 D<sub>2</sub>의 weight들을 묶었기 때문에 가능하다.
 - 다른 도메인에서 생성된 이미지의 L1 norm을 minimize시킴으로서 D<sub>1</sub>과 D<sub>2</sub> 이 해당하는 이미지를 같은 방식으로 해석하도록 했다.
 
 ## Futrue Work
