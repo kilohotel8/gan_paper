@@ -48,9 +48,9 @@
 - G<sub>1</sub>은 두종류의 이미지를 생성할 수 있다 : x ̃<sub>2→1</sub> = G<sub>1</sub> (z<sub>1</sub> ∼ q<sub>1</sub> (z<sub>1</sub> |x<sub>1</sub> )), x ̃<sub>1→1</sub> = G<sub>1</sub>(z<sub>2</sub> ∼ q<sub>2</sub>(z<sub>2</sub>|x<sub>2</sub>)) 
 
 ### Learning
-
-- VAE<sub>1</sub>, VAE<sub>2</sub>, GAN<sub>1</sub>,GAN<sub>2</sub>의 image reconstruction streams, the image translation streams, and the cycle-reconstruction streams를 풀어야 한다.
 ![](../imgs/img_obj.png)
+- VAE<sub>1</sub>, VAE<sub>2</sub>, GAN<sub>1</sub>,GAN<sub>2</sub>의 image reconstruction streams, the image translation streams, and the cycle-reconstruction streams를 풀어야 한다.
+![](../imgs/img_vae.png)
 - 위의 negative log-likelihood를 minimize한다는 것은 이미지와 생성된 이미지의 absolute distance를 minimize함을 의미한다.
 ![](../imgs/img_gan.png)
 - 여태까지 보던 gan function과 동일하다.
