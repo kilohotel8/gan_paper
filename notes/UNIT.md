@@ -11,7 +11,7 @@
 ![](../imgs/img_sls.png)
 - 임의의 x1과 x2라는 이미지가 있을때 shared-latent space에 두 이미지를 복원할 수 있는 shared latent code인 z가 있다고 가정한다.
 
-- z = E\*<sub>1</sub>(x<sub>1</sub>) = E\*<sub>2</sub>*(x<sub>2</sub>),  x<sub>1</sub> = G\*<sub>1</sub>(z),  x<sub>2</sub> = G\*<sub>2</sub>(z), F\*<sub>1→2</sub>(x<sub>1</sub>) = G\*<sub>2</sub>(E\*<sub>1</sub>(x<sub>1</sub>)), F\*<sub>2→1</sub>(x<sub>2</sub>) = G\*<sub>1</sub>(E\*<sub>2</sub>(x<sub>2</sub>))
+- z = E\*<sub>1</sub>(x<sub>1</sub>) = E\*<sub>2</sub>(x<sub>2</sub>),  x<sub>1</sub> = G\*<sub>1</sub>(z),  x<sub>2</sub> = G\*<sub>2</sub>(z), F\*<sub>1→2</sub>(x<sub>1</sub>) = G\*<sub>2</sub>(E\*<sub>1</sub>(x<sub>1</sub>)), F\*<sub>2→1</sub>(x<sub>2</sub>) = G\*<sub>1</sub>(E\*<sub>2</sub>(x<sub>2</sub>))
 
 - F\*<sub>1</sub> and F\*<sub>2</sub>가 성립하기 위해서 cycle-consistency assumption이 성립할 필요가 있다.(역은 성립하지 않는다.) : x<sub>1</sub> = F\*<sub>2→1</sub> (F\*<sub>1→2</sub> (x<sub>1</sub>)) , x<sub>2</sub> = F\*<sub>1→2</sub> (F\*<sub>2→1</sub> (x<sub>2</sub> )). 
 
