@@ -8,7 +8,7 @@
 - 이를 해결하기 위해서 shared-latent space assumption을 사용한다.
 
 ## Shared-latent space assumption
-![](./imgs/img_sls.png)
+![](../imgs/img_sls.png)
 - 임의의 x1과 x2라는 이미지가 있을때 shared-latent space에 두 이미지를 복원할 수 있는 shared latent code인 z가 있다고 가정한다.
 
 - z = E\*<sub>1</sub>(x<sub>1</sub>) = E\*<sub>2</sub>*(x<sub>2</sub>),  x<sub>1</sub> = G\*<sub>1</sub>(z),  x<sub>2</sub> = G\*<sub>2</sub>(z), F\*<sub>1→2</sub>(x<sub>1</sub>) = G\*<sub>2</sub>(E\*<sub>1</sub>(x<sub>1</sub>)), F\*<sub>2→1</sub>(x<sub>2</sub>) = G\*<sub>1</sub>(E\*<sub>2</sub>(x<sub>2</sub>))
@@ -17,7 +17,7 @@
 
 - Shared-latent space를 사용하기 위해서 shared intermediate representation h를 추가적으로 가정한다.
 
-  ![](./imgs/img_h.png)
+  ![](../imgs/img_h.png)
 
 - 결과적으로 밑의 식이 성립한다.
 
@@ -26,10 +26,10 @@
 - G\*<sub>H</sub> 는 z에서 h를 생성하는 high level generation function이고(전체적인 것) G\*<sub>L,1</sub>과 G*<sub>L,2</sub>는 low level generation function이다.(세부적인 것) 
 
 ## Framework
-![](./imgs/img_net.png)
+![](../imgs/img_net.png)
 - Encoder E<sub>1</sub> E<sub>2</sub>, generator G<sub>1</sub>, G<sub>2</sub>, adversrial discriminator D<sub>1</sub>, D<sub>2</sub> 총 6개의 subnetworks로 이루어져 있다.
 
-  ![](./imgs/img_function.png)
+![](../imgs/img_function.png)
 
 ### VAE
 
@@ -50,17 +50,17 @@
 ### Learning
 
 - VAE<sub>1</sub>, VAE<sub>2</sub>, GAN<sub>1</sub>,GAN<sub>2</sub>의 image reconstruction streams, the image translation streams, and the cycle-reconstruction streams를 풀어야 한다.
-![](./imgs/img_obj.png)
+![](../imgs/img_obj.png)
 - 위의 negative log-likelihood를 minimize한다는 것은 이미지와 생성된 이미지의 absolute distance를 minimize함을 의미한다.
-![](./imgs/img_gan.png)
+![](../imgs/img_gan.png)
 - 여태까지 보던 gan function과 동일하다.
-![](./imgs/img_cc.png)
+![](../imgs/img_cc.png)
 - 두번 변환된 이미지가 input가 비슷하며 latent code가 사전확률과 다르지 않도록 한다.
 
 ## Experiment
-![](./imgs/img_experiment.png)
-![](./imgs/img_translated.png)
-![](./imgs/img_translated2.png)
+![](../imgs/img_experiment.png)
+![](../imgs/img_translated.png)
+![](../imgs/img_translated2.png)
 
 ### Domain Adaption
 - 한 domain에서 학습된 classifier를 트레이닝 과정에서 볼 수 없었던 새로운 domain을 분류하는 문제에 적용.
