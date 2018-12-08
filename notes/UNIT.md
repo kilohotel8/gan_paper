@@ -21,7 +21,7 @@
 
 - 결과적으로 밑의 식이 성립한다.
 
-- G\*<sub>1</sub> ≡ G\*<sub>L,1</sub> ◦ G\*<sub>H</sub> and G\* ≡ G*<sub>L,2</sub> ◦ G\*<sub>H</sub>
+- G\*<sub>1</sub> ≡ G\*<sub>L,1</sub> ◦ G\*<sub>H</sub> and G\*<sub>2</sub> ≡ G*<sub>L,2</sub> ◦ G\*<sub>H</sub>
 
 - G\*<sub>H</sub> 는 z에서 h를 생성하는 high level generation function이고(전체적인 것) G\*<sub>L,1</sub>과 G*<sub>L,2</sub>는 low level generation function이다.(세부적인 것) 
 
